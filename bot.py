@@ -26,6 +26,13 @@ async def add(ctx, left: int, right: int):
     await ctx.send(left + right)
 
 
+@bot.command(name='bot')
+async def _bot(ctx):
+    """Is the bot cool?"""
+    await ctx.send('Yes, the bot is cool.')
+
+
+
 @bot.command()
 async def roll(ctx, dice: str):
     """Rolls a dice in NdN format."""
